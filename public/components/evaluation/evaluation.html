@@ -1,0 +1,61 @@
+<div class="md-padding">
+	<form name="form_evaluation">
+		<md-card class="md-padding">
+			<div layout="row">
+				<md-icon class="material-icons">person</md-icon>
+				<h2 class="md-title margin-left-5px">Dados do Candidato</h2>
+				<div flex></div>
+			</div>
+			<md-input-container class="md-block">
+				<label>Nome</label>
+				<input ng-model="candidate.name" ng-required="true">
+			</md-input-container>
+			<md-input-container class="md-block">
+				<label>Email</label>
+				<input ng-model="candidate.email" type="email" ng-required="true">
+			</md-input-container>
+
+			<div layout="row">
+				<md-icon class="material-icons">import_contacts</md-icon>
+				<h2 class="md-title margin-left-5px">Conhecimento</h2>
+				<div flex></div>
+			</div>
+			<span class="md-caption">Avalie seu conhecimento de 0 a 10 nos seguintes itens:</span>
+			<div layout-gt-xs="row" layout-xs="column">
+				<div flex>
+					<md-input-container class="md-block">
+						<label>HTML</label>
+						<input ng-model="candidate.html" type="text" ui-number-mask="0" min="0" max="10">
+					</md-input-container>
+					<md-input-container class="md-block">
+						<label>CSS</label>
+						<input ng-model="candidate.css" type="text" ui-number-mask="0" min="0" max="10">
+					</md-input-container>
+					<md-input-container class="md-block">
+						<label>Javascript</label>
+						<input ng-model="candidate.js" type="text" ui-number-mask="0" min="0" max="10">
+					</md-input-container>
+					<md-input-container class="md-block">
+						<label>Python</label>
+						<input ng-model="candidate.python" type="text" ui-number-mask="0" min="0" max="10">
+					</md-input-container>
+				</div>
+				<div flex>
+					<md-input-container class="md-block">
+						<label>Django</label>
+						<input ng-model="candidate.django" type="text" ui-number-mask="0" min="0" max="10">
+					</md-input-container>
+					<md-input-container class="md-block">
+						<label>Desenvolvimento iOS</label>
+						<input ng-model="candidate.ios" type="text" ui-number-mask="0" min="0" max="10">
+					</md-input-container>
+					<md-input-container class="md-block">
+						<label>Desenvolvimento Android </label>
+						<input ng-model="candidate.android" type="text" ui-number-mask="0" min="0" max="10">
+					</md-input-container>
+				</div>
+			</div>
+			<md-button class="md-raised md-primary" ng-click="form_evaluation.$invalid || save()" ng-disabled="form_evaluation.$invalid">Confirmar Avaliação</md-button>
+		</md-card>
+	</form>
+</div>

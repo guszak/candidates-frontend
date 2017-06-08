@@ -1,0 +1,12 @@
+body {
+	height: auto;
+}
+.material-icons {
+	color: #757575;
+}
+.md-button {
+	text-transform: capitalize;
+}
+.margin-left-5px {
+	margin-left: 5px;
+}
