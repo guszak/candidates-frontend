@@ -8,11 +8,11 @@
 			</div>
 			<md-input-container class="md-block">
 				<label>Nome</label>
-				<input ng-model="candidate.name" ng-required="true">
+				<input ng-model="evaluation.name" ng-required="true">
 			</md-input-container>
 			<md-input-container class="md-block">
 				<label>Email</label>
-				<input ng-model="candidate.email" type="email" ng-required="true">
+				<input ng-model="evaluation.email" type="email" ng-required="true">
 			</md-input-container>
 
 			<div layout="row">
@@ -25,37 +25,37 @@
 				<div flex>
 					<md-input-container class="md-block">
 						<label>HTML</label>
-						<input ng-model="candidate.html" type="text" ui-number-mask="0" min="0" max="10">
+						<input ng-model="evaluation.html" type="text" ui-number-mask="0" min="0" max="10">
 					</md-input-container>
 					<md-input-container class="md-block">
 						<label>CSS</label>
-						<input ng-model="candidate.css" type="text" ui-number-mask="0" min="0" max="10">
+						<input ng-model="evaluation.css" type="text" ui-number-mask="0" min="0" max="10">
 					</md-input-container>
 					<md-input-container class="md-block">
 						<label>Javascript</label>
-						<input ng-model="candidate.js" type="text" ui-number-mask="0" min="0" max="10">
+						<input ng-model="evaluation.javascript" type="text" ui-number-mask="0" min="0" max="10">
 					</md-input-container>
 					<md-input-container class="md-block">
 						<label>Python</label>
-						<input ng-model="candidate.python" type="text" ui-number-mask="0" min="0" max="10">
+						<input ng-model="evaluation.python" type="text" ui-number-mask="0" min="0" max="10">
 					</md-input-container>
 				</div>
 				<div flex>
 					<md-input-container class="md-block">
 						<label>Django</label>
-						<input ng-model="candidate.django" type="text" ui-number-mask="0" min="0" max="10">
+						<input ng-model="evaluation.django" type="text" ui-number-mask="0" min="0" max="10">
 					</md-input-container>
 					<md-input-container class="md-block">
 						<label>Desenvolvimento iOS</label>
-						<input ng-model="candidate.ios" type="text" ui-number-mask="0" min="0" max="10">
+						<input ng-model="evaluation.ios" type="text" ui-number-mask="0" min="0" max="10">
 					</md-input-container>
 					<md-input-container class="md-block">
 						<label>Desenvolvimento Android </label>
-						<input ng-model="candidate.android" type="text" ui-number-mask="0" min="0" max="10">
+						<input ng-model="evaluation.android" type="text" ui-number-mask="0" min="0" max="10">
 					</md-input-container>
 				</div>
 			</div>
-			<md-button class="md-raised md-primary" ng-click="form_evaluation.$invalid || save()" ng-disabled="form_evaluation.$invalid">Confirmar Avaliação</md-button>
+			<md-button class="md-raised md-primary" ng-click="form_evaluation.$invalid || waitingCallback || save()" ng-disabled="form_evaluation.$invalid || waitingCallback">Confirmar Avaliação</md-button>
 		</md-card>
 	</form>
 </div>

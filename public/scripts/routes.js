@@ -17,7 +17,6 @@
  	.state('end', {
  		url: '/end',
  		templateUrl: 'public/components/end/end.html' + bustUrl,
- 		controller: 'end_ctrl',
  		cache: false
  	})
 
