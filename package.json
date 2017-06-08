@@ -1,13 +1,17 @@
 {
-  "name": "candidates-app",
+  "name": "candidates-frontend",
   "version": "1.0.0",
   "description": "Candidates for developer job webapp",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/guszak/candidates-frontend.git"
+  },
   "author": "Lucas Guszak",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "angular": "1.5.10",
     "angular-animate": "1.5.10",
