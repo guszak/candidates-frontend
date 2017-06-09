@@ -30,7 +30,13 @@ For example:
 }
 ```
 
-## Usage
+## Test
+
+```bash
+npm test
+```
+
+## Build
 
 ```bash
 gulp
