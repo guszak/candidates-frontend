@@ -36,5 +36,9 @@
     "pump": "^1.0.2",
     "run-sequence": "^1.2.2",
     "stream-series": "^0.1.1"
+  },
+  "devDependencies": {
+    "chai": "^4.0.2",
+    "mocha": "^3.4.2"
   }
 }
